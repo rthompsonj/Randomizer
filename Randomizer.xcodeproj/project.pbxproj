@@ -11,7 +11,6 @@
 		C4512A4A1DAC3DD70070DDD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4512A491DAC3DD70070DDD1 /* ViewController.swift */; };
 		C4512A4D1DAC3DD70070DDD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4512A4B1DAC3DD70070DDD1 /* Main.storyboard */; };
 		C4512A4F1DAC3DD70070DDD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4512A4E1DAC3DD70070DDD1 /* Assets.xcassets */; };
-		C4512A521DAC3DD70070DDD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4512A501DAC3DD70070DDD1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		C4512A491DAC3DD70070DDD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4512A4C1DAC3DD70070DDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4512A4E1DAC3DD70070DDD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C4512A511DAC3DD70070DDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4512A531DAC3DD70070DDD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +56,6 @@
 				C4512A491DAC3DD70070DDD1 /* ViewController.swift */,
 				C4512A4B1DAC3DD70070DDD1 /* Main.storyboard */,
 				C4512A4E1DAC3DD70070DDD1 /* Assets.xcassets */,
-				C4512A501DAC3DD70070DDD1 /* LaunchScreen.storyboard */,
 				C4512A531DAC3DD70070DDD1 /* Info.plist */,
 			);
 			path = Randomizer;
@@ -124,7 +121,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4512A521DAC3DD70070DDD1 /* LaunchScreen.storyboard in Resources */,
 				C4512A4F1DAC3DD70070DDD1 /* Assets.xcassets in Resources */,
 				C4512A4D1DAC3DD70070DDD1 /* Main.storyboard in Resources */,
 			);
@@ -151,14 +147,6 @@
 				C4512A4C1DAC3DD70070DDD1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C4512A501DAC3DD70070DDD1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4512A511DAC3DD70070DDD1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +290,7 @@
 				C4512A581DAC3DD70070DDD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
