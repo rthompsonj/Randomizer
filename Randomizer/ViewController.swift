@@ -64,6 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         
         if(textOptions.count <= 0){
+            resultLabel.text = "No options to randomize!"
             return
         }
         
