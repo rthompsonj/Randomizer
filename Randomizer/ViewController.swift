@@ -55,6 +55,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func doTheRandom(_ sender: AnyObject) {
+        resultLabel.textColor = UIColor.black
+        resultLabel.text = "..."
+        
         textOptions = []
         
         for field in textFields {
@@ -64,12 +67,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         
         if(textOptions.count <= 0){
-            resultLabel.text = "No options to randomize!"
+            resultLabel.text = "Nothing to randomize!"
             return
         }
         
         let index = arc4random_uniform(UInt32(textOptions.count))
         let txt = textOptions[Int(index)]
+        resultLabel.textColor = generateRandomColor()
         resultLabel.text = txt
     }
 
@@ -77,6 +81,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         for field in textFields {
             field.text = ""
         }
+        resultLabel.textColor = UIColor.black
+        resultLabel.text = "..."
+    }
+    
+    //https://gist.github.com/asarode/7b343fa3fab5913690ef
+    func generateRandomColor() -> UIColor {
+        let hue : CGFloat = CGFloat(arc4random() % 256) / 256 // use 256 to get full range from 0.0 to 1.0
+        let saturation : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from white
+        let brightness : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from black
+        
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
     }
 
 }
